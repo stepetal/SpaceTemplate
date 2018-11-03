@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpot" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Space template</title>
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <main role="main">
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <img src="https://cdn.theatlantic.com/assets/media/img/mt/2018/08/iss050e066094_large/lead_720_405.jpg?mod=1535549776" alt="space" id="space-logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuCollapse">
+          <span class="navbar-toggler-item"></span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="menuCollapse">
+          <ul class="navbar-nav">
+            <li class=nav-item>
+              <a class="nav-link upper_tab" id="constellations">Constillations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link upper_tab" id="galaxies">Galaxies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link upper_tab">Planets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link upper_tab">Satellites</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> More </a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-light" href="#">Pictures</a>
+                <a class="dropdown-item text-light" href="#">Movies</a>
+                <a class="dropdown-item text-light" href="#">Links</a>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="jumbotron">
+        <div class="useful_content" id="constellationsContent">
+          <div class="row">
+            <div class="col-sm-2">
+              <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" id="ursaMinor">Ursa Minor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="ursaMajor">Ursa Major</a>
+                </li>
+              </div>
+              <div class="col-sm-10 right_side">
+                <!-- <button id="btnHide">Hide</button>
+                <button id="btnShow">Show</button> -->
+                <div id="ursaMinorInfo" class="info_content">
+                  <p class="text-center"> Созвездие малой медведицы </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <img src="img/UrsaMinor.jpg" class="img-thumbnail mx-auto d-block img-fluid image_prop float-left" alt="Ursa Minor">
+                    </div>
+                    <div class="col-sm-6">
+                      <p class="inner_text">Созвездие малой медведицы можно сравнительно нетрудно обнаружить на ночном небе</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div id="ursaMajorInfo" class="info_content">
+                  <p class="text-center"> Созвездие большой медведицы </p>
+                  <img src="img/UrsaMajor.jpg" class="img-thumbnail mx-auto d-block img-fluid image_prop float-left" alt="Ursa Major">
+                </div>
+              </div>
+
+
+              <!-- <p class="main_content" id="info">
+              Созвездие малой медведицы
+            </p> -->
+
+          </div>
+
+        </div>
+        <div class="useful_content" id="galaxiesContent">
+          <div class="row">
+            <div class="col-sm-2">
+              <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" id="milkyWay">Milky Way</a>
+                </li>
+                  <a class="nav-link" id="andromeda">Andromeda</a>
+                <li>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-10 right_side">
+              <div id=AndromedaInfo class="info_content">
+                <p class="text-center">Галактика Андромеды</p>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <img src="img/Andromeda.jpg" class="img-thumbnail mx-auto d-block img-fluid image_prop float-left" alt="Andromeda">
+                  </div>
+                  <div class="col-sm-6">
+                    <p class="innder_text">Галактика Андромеды (Туманность Андромеды) - ближайшая к Млечному пути большая галактика</p>
+                  </div>
+                </div>
+              </div>
+              <div id=MilkyWayInfo class="info_content">
+                <p class="text-center">Галактика Млечный Путь</p>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <img src="img/MilkyWay.png" class="img-thumbnail mx-auto d-block img-fluid image_prop float-left" alt="Milky Way">
+                  </div>
+                  <div class="col-sm-6">
+                    <p class="innder_text">Галактика Млечный Путь - галактика, к которой принадлежит планета Земля</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+
+
+    <!-- <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+  </body>
+
+
+</html>
