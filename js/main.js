@@ -1,10 +1,31 @@
 $(document).ready(function(){
-  $("#planetsTable").DataTable();
-  $(".useful_content").hide();
-  $("#constellationsContent").show();
-  $("#constellations").addClass("active");
-  //$(".info_content").setAttribute("style","border-color: #007bff");
-  $(".image_prop").css('border-color','#007bff');
+
+  $('.nav-link').on('click',function(e){
+    e.preventDefault();
+    //var url = this.href;
+    var url = $(this).attr('href');
+    console.log(url);
+    $('.nav-link').removeClass('current');
+    $(this).addClass('current');
+    console.log(this);
+    //console.log($(this).attr('href'));
+    //$('#container').remove();
+    $('#content').load(url,function(){
+      alert ("content is loaded");
+
+    }).hide().fadeIn('slow');
+  });
+
+
+
+  //$("#planetsTable").DataTable();
+
+
+  // $(".useful_content").hide();
+  // $("#constellationsContent").show();
+  // $("#constellations").addClass("active");
+
+  //$(".image_prop").css('border-color','#007bff');
 
 
 
@@ -12,6 +33,7 @@ $(document).ready(function(){
   // $("#ursaMajorInfo").hide();
   // $("#galaxiesContent").hide();
 
+/*
   $("#ursaMinor").on("click",function(){
     $("#ursaMinorInfo").show();
     $("#ursaMajorInfo").hide();
@@ -38,12 +60,14 @@ $(document).ready(function(){
   });
 
   $("#galaxies").on("click",function(){
+    $("#planetsContent").hide();
     $("#constellationsContent").hide();
     $("#galaxiesContent").show();
     $(".upper_tab").removeClass("active");
     $("#galaxies").addClass("active");
   });
   $("#constellations").on("click",function(){
+    $("#planetsContent").hide();
     $("#galaxiesContent").hide();
     $("#constellationsContent").show();
     $(".upper_tab").removeClass("active");
@@ -58,4 +82,5 @@ $(document).ready(function(){
     $("#planets").addClass("active");
 
   });
+  */
 });
