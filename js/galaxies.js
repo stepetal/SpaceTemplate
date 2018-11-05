@@ -1,0 +1,18 @@
+$(document).ready(function(){
+  $("#MilkyWayInfo").show();
+  $("#AndromedaInfo").hide();
+  $("#milkyWay").addClass("active");
+  $("#andromeda").removeClass("active");
+  $("#milkyWay").on("click",function(){
+    $("#MilkyWayInfo").show();
+    $("#AndromedaInfo").hide();
+    $("#milkyWay").addClass("active");
+    $("#andromeda").removeClass("active");
+  });
+  $("#andromeda").on("click",function(){
+    $("#AndromedaInfo").show();
+    $("#MilkyWayInfo").hide();
+    $("#andromeda").addClass("active");
+    $("#milkyWay").removeClass("active");
+  });
+});

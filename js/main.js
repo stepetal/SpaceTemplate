@@ -5,15 +5,12 @@ $(document).ready(function(){
     //var url = this.href;
     var url = $(this).attr('href');
     console.log(url);
-    $('.nav-link').removeClass('current');
-    $(this).addClass('current');
+    $('.nav-link').removeClass('current active');
+    $(this).addClass('current active');
     console.log(this);
     //console.log($(this).attr('href'));
     //$('#container').remove();
-    $('#content').load(url,function(){
-      alert ("content is loaded");
-
-    }).hide().fadeIn('slow');
+    $('#content').load(url).hide().fadeIn('slow');
   });
 
 
