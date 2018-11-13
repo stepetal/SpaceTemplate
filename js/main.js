@@ -2,9 +2,9 @@ $(document).ready(function(){
 
   $('.nav-link').on('click',function(e){
     e.preventDefault();
-    //var url = this.href;
-    var url = $(this).attr('href');
-    console.log(url);
+    var url = this.href;
+    //var url = $(this).attr('href');
+    //console.log(url);
     $('.nav-link').removeClass('current active');
     $(this).addClass('current active');
     console.log(this);
