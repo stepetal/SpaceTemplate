@@ -3,6 +3,10 @@
 	width: 300px;
 }
 
+.carousel-caption{
+	margin-bottom: 30px;
+}
+
 #space-logo{
 	width: 45px;
 }
