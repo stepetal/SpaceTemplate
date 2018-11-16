@@ -14,23 +14,7 @@ $(document).ready(function(){
     $('#carouselConstellations').hide();
   });
 
-  $('#ursaMinorContainer').hover(function(){
-    $(this).find('img').fadeTo(500,0.5);
-  },function(){
-      $(this).find('img').fadeTo(500,1);
-  });
-
-  $('#ursaMinorImg').click(function() {
-	    $('#ursaMinorContainer').find('img').fadeTo(0, 1);
-        if($('#ursaMinorImg').hasClass('enlarged')){
-            $('#ursaMinorImg').removeClass('enlarged');
-            $("#ursaMinorImg").stop().animate({width: 280, height: 187}, 200 );
-        }else{
-            $('#ursaMinorImg').addClass('enlarged')
-            $("#ursaMinorImg").stop().animate({width: 800, height: 533}, 200 );
-        }
-
-    });
+  
 
 
 
